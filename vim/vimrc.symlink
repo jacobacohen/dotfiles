@@ -1,4 +1,13 @@
 syntax on
+set autoindent
+set expandtab
+filetype indent on
+set smarttab
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+set smartcase
+
+set ruler
+
+colorscheme default
+set title
+
