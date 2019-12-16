@@ -94,3 +94,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# get JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# OPAM configuration
+. /Users/jacobcohen/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+export PATH="$HOME/ghidra/ghidra_9.0/:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
+export DYLD_LIBRARY_PATH=/usr/local/opt/unicorn/lib/:$DYLD_LIBRARY_PATH
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/Users/jacobcohen/Library/Android/sdk/build-tools/24.0.3:$PATH"
+
+alias ll='ls -alt'
+
+alias vol='python /Users/jacobcohen/Documents/volatility/vol.py'
+alias vol3='python3 /Users/jacobcohen/Documents/volatility3/vol.py'
